@@ -42,7 +42,7 @@ gulp.task('js', function () {
 });
 // 处理图片
 gulp.task("img",function(){
-    gulp.src(app.src+"images/*.*")
+    gulp.src(app.src+"images/*/*.*")
     .pipe(imagemin())
     .pipe(gulp.dest(app.dist+"images"))
     .pipe(connect.reload());

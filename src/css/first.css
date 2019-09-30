@@ -1,0 +1,138 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.header{
+    width: 1190px;
+    height: 96px;
+    margin:0 auto;
+}
+.logo{
+    width: 410px;
+    height: 60px;
+    margin-top: 18px;
+}
+.spe{
+    margin-left: 30px;
+}
+.sea{
+    width: 580px;
+    height: 63px;
+}
+.nav{
+    width: 500px;
+    height: 30px;
+    line-height: 30px;
+    color: #666;
+}
+.header>.nav>a{
+    color: #666;
+    text-decoration: none;
+}
+.nav span{
+    display: inline;
+    margin: 5px;
+}
+.search{
+    
+	background: red;
+    margin-top: 25px
+}
+.search-text{
+	width: 426px;
+	height: 35px;
+    border: 2px solid red;
+    padding: 0 10px
+}
+.search-submit{
+	width: 85px;
+	height: 35px;
+	line-height: 35px;
+	background: red;
+	color: #fff;
+	border:red;
+	padding: 0;
+}
+.anfubao{
+    width: 122px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border: 1px solid #666;
+    color: #666;
+    margin-top: 25px;
+    font-size:12px;
+    background: url(../images/first/header-right-icon.png) no-repeat 110px 13px;
+}
+
+/* 轮播图 */
+.wrapper ul,ol {
+    list-style: none;
+}
+.wrapper {
+    width: 785px;
+    height: 430px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    top:-430px;
+    left: 8px;
+}
+
+.wrapper>ul>li {
+    width: 785px;
+    height: 430px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    display: none;
+}
+
+.wrapper>ol {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    width: 210px;
+}
+
+.wrapper>ol>li {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #abc;
+
+}
+
+.wrapper ol li.current {
+    background-color: pink;
+}
+.prev{
+    width: 32px;
+    height: 40px;
+    position: absolute;
+    top: 195px;
+    border: none;
+    display: none;
+    background: url('../images/first/left1.png') no-repeat,#333;
+}
+.next{
+    width: 32px;
+    height: 40px;
+    position: absolute;
+    top: 195px;
+    right: 0;
+    border:none;
+    display: none;
+    background: url('../images/first/right1.png'),#333;
+}
