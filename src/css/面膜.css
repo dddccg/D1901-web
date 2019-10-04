@@ -1,0 +1,402 @@
+@charset "utf-8";
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,input,textarea,figure,figcaption{
+	margin: 0;
+	padding: 0;
+}
+body,html{
+	height: 100%;
+}
+*{
+	box-sizing: border-box;
+}
+
+
+a{
+    color: #FFF;
+    
+  text-decoration: none;	
+}
+ul,ol,li{
+	list-style: none;
+}
+b,strong{
+	font-weight: normal;
+}
+i,em{
+	font-size: normal;
+}
+img{
+	vertical-align: top;
+}
+input{
+	outline: none;
+	border: none;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clearfix:after{
+	content: " ";
+	display: block;
+	clear: both;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
+.clearfix{
+	zoom:1;
+}
+em,i,s{font-style:normal;}
+/* 头部 */
+.header {
+    background: #FFF;
+    min-width: 1190px;
+    height: 96px;
+}
+.w1200 .wrap{
+    width: 1190px;
+    margin: 0 auto;
+}
+.w1200 .header-font{
+    width: 1190px;
+    height: 96px;
+}
+.header-logo {
+    width: 410px;
+    height: 60px;
+    margin-top: 18px;
+}
+.logo{
+    width:190px;
+    float:left;
+}
+.secondary-logo{
+    float:left;
+    margin-left:25px;
+}
+.header-search {
+    width: 780px;
+    position: absolute;
+    left: 460px;
+    margin-top: 25px;
+}
+.header-search-input>.indiv {
+    background: #FFF;
+    height: 35px;
+    overflow: hidden;
+   
+    padding: 0 10px;
+    vertical-align: middle;
+}
+.header-search-input .gray{
+    width: 426px;
+    height: 31px;
+    border: 2px solid red;
+    padding-left: 3px;
+}
+.header-search-input{
+    position: relative;
+}
+.header-search-input .search-button{
+    position: absolute;
+    left: 436px;
+    top: 0;
+    border: 0;
+    cursor: pointer;
+    
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    color: #fff;
+    font-size: 14px;
+    color: #FFF;
+    width: 85px;
+    height: 31px;
+    background: red;
+}
+.header-search-font span{
+    
+    color: #999;
+    margin-right: 5px;
+    margin-left: 5px;
+    display: inline-block; 
+}
+.header-search-font>a{
+    color: #999;
+    font-size: 14px;
+    /* float: left; */
+}
+
+.header-search-font>a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+
+
+
+/* 导航 */
+
+
+li{
+    list-style-type:none;
+}
+
+
+a:hover{
+    color:#FFF;
+}
+
+.nav{
+    min-width: 1190px;
+    
+    height:30px;
+    
+    background: #000;
+    /* box-shadow:0 0 2px #DDD; */
+}
+
+.top-nav{
+    width:1190px;
+    margin:0px auto;/*为了让盒子居中显示*/
+    height:30px;
+}
+
+.top-nav ul{
+    width:100%;
+    height:auto;
+}
+
+.top-nav>ul>li{
+    width:120px;
+    float:left;
+    background: #000;
+    line-height:30px;
+    text-align:center;
+    position:relative;
+}
+
+/* .top-nav ul li ul[class="two-items"]:before{
+    content:"";
+    position:absolute;
+    top:-5px;
+    left:5px;
+    margin-left:40px;
+    border-left:5px solid transparent;
+    border-right:5px solid transparent;
+    border-bottom:5px solid #666;
+} */
+
+.top-nav ul li ul[class="two-items"]{
+    position:absolute;
+    top:30px;
+    left:0;
+    
+    border-radius:5px;
+    display:none;
+    /*z-index:;  这里没设置层级是因为父级元素只是一个单独的下拉菜单盒子，不会影响页面结构，如果页面结构还涉及其他一些元素，不设置层级大小的话，会对整个页面的结构造成威胁。*/
+}
+
+.one-items>.two-items>li{
+    position:relative;
+    float:none;
+    background: #000;
+    color: #FFF;
+    font-size: 14px;
+}
+
+/* .top-nav ul li ul>li:first-child{
+    border-radius:5px 5px 0 0;
+}
+
+.top-nav ul li ul>li:last-child{
+    border-radius:0 0 5px 5px;
+} */
+
+.top-nav ul li:hover{
+    background:red;
+}
+
+.top-nav ul li:hover ul[class="two-items"]{
+    display:block;
+}
+
+.top-nav ul li ul li:hover ul[class="three-items"]{
+   
+    display:block;
+}
+.two-items{
+    background: #000;
+}
+.two-items .three-items{
+     display:none;
+    position:absolute;
+    top:0;
+    left:120px;
+    width: 1000px;
+    height: 360px;
+    z-index: 1010;
+    background: #FFF;
+    border: 1px solid #999;
+    /*z-index:;  这里没设置层级是因为父级元素只是一个单独的下拉菜单盒子，不会影响页面结构，如果页面结构还涉及其他一些元素，不设置层级大小的话，会对整个页面的结构造成威胁。*/
+}
+.top-nav .three-items a{
+    color: #999;
+}
+.three-items>dl{
+    text-align: left;
+    line-height: 20px;
+    margin: 5px 5px;
+    color: #000;
+}
+
+
+/* 首页 面膜 */
+#home-search{
+    height: 56px;
+}
+.nav-home{
+    width: 1190px;
+    height: 56px;
+    margin: 0 auto;
+    border-bottom: 3px solid #000;
+}
+
+
+
+
+
+
+/* #nav{
+    height: 35px;
+    background: #000;
+}
+.nav-wrap{
+    width: 1190px;
+    height: 35px;
+    margin: 0 auto;
+}
+.navb .other{
+   width: 100px;
+   height: 35px;
+   line-height: 35px;
+   float: left; 
+   margin-right: 20px;
+    text-align: center;
+}
+.navb>ul>li:hover{
+    background: red;
+}
+.navb li>a{
+    display: inline-block;
+   font-size: 14px;
+    color: #FFF
+}
+.navb .frist-li{
+    width: 130px;
+    color: #FFF;
+    font-size: 14px;
+    line-height: 35px;
+    float: left;
+    position: relative;
+}
+.navb .frist-li:hover{
+    background: #000;
+}
+.frist-li>.shop-li{
+    height: 450px;
+    background: #000;
+    position: absolute;
+    left: 0;
+    top: 35px;
+    display: none;
+}
+.frist-li:hover>.shop-li{
+    display: block
+}
+.shop-li li{
+    text-align: left;
+    width: 130px
+    height: 35px;
+    margin-bottom: 2px;
+    position: relative;
+}
+.shop-li li>a{
+    color: #FFF;
+
+}
+.shop-li .li-inner{
+    width: 200px;
+    height: 300px;
+    border: 1px solid red;
+    display: none;
+    position: absolute;
+    left: 130px;
+    top:0;
+}
+.shop-li .li-inner:hover>li{
+    display: block
+} */
+/* .nav-wrap{
+    width: 1190px;
+    height: 35px;
+    margin: 0 auto;
+}
+
+.navb>a{
+    
+    float: left;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    color: #FFF;
+    text-align: center;
+    margin-right: 40px;
+}
+.navb>a:hover{
+    background: red;
+}
+ .navb>.current{
+     margin-left: 130px
+ }
+ .list{
+     position: relative;
+ }
+.list ul{
+    width: 130px;
+    height: 420px;
+    background: #000;
+    padding-top: 5px;
+    display: none;
+    
+
+}
+:hover{
+    display: block;
+}
+.list li{
+    height: 32px;
+    
+}
+.left-list>ul a{
+    color: #FFF;
+    margin-left: 2px;
+    font-size: 14px;
+}
+.left-list>h2>a{
+    /* z-index: 2; */
+
+    /*color: #FFF;
+    font-size: 16px;
+    text-align: center;
+    display: inline-block;
+    width:130px;
+    height: 27px;
+}
+.left-list{
+    position: absolute;
+    top: -35px;
+    left: 0
+} */
