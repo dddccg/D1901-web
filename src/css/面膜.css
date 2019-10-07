@@ -10,7 +10,10 @@ body,html{
 	box-sizing: border-box;
 }
 
-
+s, i, em {
+    text-decoration: none;
+    font-style: normal;
+}
 a{
     color: #FFF;
     
@@ -26,17 +29,29 @@ i,em{
 	font-size: normal;
 }
 img{
+    border: 0;
+    outline: none;
 	vertical-align: top;
 }
 input{
 	outline: none;
 	border: none;
 }
+body,html {
+    height: auto;
+}
 .fl{
 	float: left;
 }
 .fr{
 	float: right;
+}
+.clr {
+    clear: both;
+}
+.aa{
+    font-size: 14px;
+    color: #000;
 }
 .clearfix:after{
 	content: " ";
@@ -50,6 +65,24 @@ input{
 	zoom:1;
 }
 em,i,s{font-style:normal;}
+
+.al {
+    text-align:left;
+}
+.ac {
+    text-align:center;
+}
+.ar {
+    text-align:right;
+}
+.hide {
+    display:none;
+}
+.container {
+    width: 1190px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
 /* 头部 */
 .header {
     background: #FFF;
@@ -263,12 +296,225 @@ a:hover{
     margin: 0 auto;
     border-bottom: 3px solid #000;
 }
+.home-left{
+    
+    width: 1050px;
+    height: 56px;
+    line-height: 56px;
+}
+.home-left a{
+    font-size: 14px;
+    color: #999;
+}
+.keySearchInput{
+    height: 22px;
+    border: 1px solid #999;
+}
+.home-right{
+    width: 140px;
+    height: 56px;
+    line-height: 56px;
+}
+.home-right a{
+    font-size: 14px;
+    color: #999;
+}
+
+/* 主要商品 */
 
 
+.filter-item {
+    background: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+    float: left;
+    display: inline;
+}
+.filter-left{
+    float: left;
+    display: inline;
+    width: 90px;
+    margin: 0 20px;
+    color: #999;
+    text-align: right;
+    line-height: 34px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.filter-right {
+    width: 1060px;
+    float: left;
+    display: inline;
+    background: #FFF;
+    padding: 6px 0;
+    padding-left: 20px;
+    line-height: 22px;
+    min-height: 22px;
+    color: #333;
+}
+.filter-left>span{
+    font-size: 14px;
+}
+.fr-button {
+    float: right;
+}
+.fr-button-a {
+    float: left;
+    height: 22px;
+    width: 56px;
+    line-height: 22px;
+    background: #eee;
+    color: #666;
+    text-align: center;
+    cursor: pointer;
+}
+.fr-button-a:hover {
+    background: #fef9ee;
+    color: #987144;
+}
+.fr-button-b {
+    float: left;
+    height: 22px;
+    width: 50px;
+    line-height: 22px;
+    background: #fff;
+    color: #666;
+    text-align: center;
+    cursor: pointer;
+    background-image: url(../images/面膜图片/展\ 开\ \(1\).png) ;
+    background-repeat: no-repeat;
+    
+    background-position: right center;
+    padding-right: 6px;
+}
+.fr-button-b:hover {
+    color: #987144;
+}
+.wid-list {
+    width: 925px;
+}
+.shshow {
+    max-height: 116px;
+    overflow: hidden;
+    position: relative;
+}
+.list-class li {
+    float: left;
+    position: relative;
+    width: 108px;
+    height: 48px;
+    border: 1px solid #eee;
+    overflow: hidden;
+    text-align: center;
+    line-height: 48px;
+    color: #999;
+    margin: 4px 5px 4px 0;
+    display: inline;
+    cursor: pointer;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.list-class li span {
+    display: inline;
+    text-align: center;
+}
+.list-class li span img {
+    height: 48px;
+}
+.list-class li i {
+    display: none;
+}
 
-
-
-
+.pt6 {
+    padding-top: 6px;
+}
+.hdl {
+    height: 24px;
+    border-bottom: 1px solid #ebebeb;
+    position: relative;
+}
+.hdl dl {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.hdl dl dd.on {
+    color: #987144;
+    border-bottom: 2px solid #987144;
+}
+.hdl dl dd {
+    float: left;
+    height: 23px;
+    line-height: 23px;
+    white-space: nowrap;
+    margin-right: 12px;
+    display: inline;
+    color: #333;
+}
+.max-h {
+    overflow: auto;
+    max-height: 224px;
+    margin-top: 8px;
+    position: relative;
+}
+.choice {
+    margin-top: 15px;
+    line-height: 30px;
+    background: #f4f1e9;
+    padding: 0 10px;
+    display: none;
+}
+.choice-left {
+    color: #999;
+    float: left;
+}
+.choice-show label {
+    float: left;
+    margin-right: 25px;
+}
+.showbutton {
+    height: 26px;
+    text-align: center;
+    text-align: center;
+    margin-top: 15px;
+  
+    line-height: 26px;
+}
+.showbutton .btn-secondary {
+    background: #987144;
+    color: #FFF;
+    border: 1px solid #987144;
+}
+.btn-secondary {
+    height: 26px;
+    background: #E6133C;
+    width: 70px;
+    color: #fff;
+    font-size: 12px;
+}
+.btn {
+    cursor: pointer;
+    text-align: center;
+    font-family: "Microsoft Yahei";
+    border: 0 none;
+    transition: all .08s ease-in;
+    /* -moz-transition: all .08s ease-in;
+    -ms-transition: all .08s ease-in;
+    -o-transition: all .08s ease-in;
+    -webkit-transition: all .08s ease-in; */
+    outline: 0;
+}
+.btn-submit {
+    margin-left: 3px;
+}
+.btn-submit {
+    height: 26px;
+    width: 70px;
+    background: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    font-size: 12px;
+}
 /* #nav{
     height: 35px;
     background: #000;
