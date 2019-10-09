@@ -254,34 +254,39 @@
 }
 
 /* 底部 */
-.footer{
+.footer {
     min-width: 1190px;
     margin: 0 auto;
     font-family: 'Microsoft YaHei';
     border: 1px;
 }
-.helpnav{
+
+.helpnav {
     background: #f3f3f3;
     min-width: 1190px;
     padding: 24px 0;
 }
-.footer-center{
+
+.footer-center {
     width: 1110px;
     margin: 0 auto;
 }
-.help-list{
+
+.help-list {
     float: left;
     width: 200px;
     margin: 0 10px;
     display: inline-block;
 }
-.help-list .help-title{
+
+.help-list .help-title {
     height: 40px;
     line-height: 40px;
     color: #000;
     font-size: 16px;
 }
-.help-title span{
+
+.help-title span {
     width: 40px;
     height: 40px;
     background: #333;
@@ -291,19 +296,23 @@
     font-size: 25px;
     margin-right: 15px;
 }
-.help-list ul{
+
+.help-list ul {
     margin-left: 55px;
     font-size: 13px;
     line-height: 26px;
     color: #555;
 }
-.help-list li a:hover{
+
+.help-list li a:hover {
     text-decoration-line: underline;
     color: #E6133C;
 }
-.bottomnav a:hover{
-    color:#E6133C;
+
+.bottomnav a:hover {
+    color: #E6133C;
 }
+
 .footer .bottomnav {
     line-height: 24px;
     text-align: center;
@@ -311,22 +320,28 @@
     color: #999;
     background: #f3f3f3;
 }
-.bottomnav span{
+
+.bottomnav span {
     padding: 0 8px;
 }
-.copyright{
+
+.copyright {
     text-align: center;
 }
-.copyright span{
+
+.copyright span {
     color: #ccc;
 }
-#footer>.bottomnav>a:hover{
+
+#footer>.bottomnav>a:hover {
     color: #666
 }
-.police img{
+
+.police img {
     width: 20px;
     height: 20px;
 }
+
 .footer .bottomnav .police a {
     display: inline-block;
     text-decoration: none;
@@ -335,6 +350,7 @@
     margin-right: 10px;
     color: #999;
 }
-.footer .bottomnav .police a:hover{
+
+.footer .bottomnav .police a:hover {
     color: #999;
 }

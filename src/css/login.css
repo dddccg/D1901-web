@@ -14,44 +14,53 @@
 .fright {
     float: right;
 }
-.wrap{
+
+.wrap {
     margin: 0 auto;
     width: 950px;
     margin-top: 29px;
 }
-.wrap .main{
+
+.wrap .main {
     width: 100%;
     height: auto;
     background: #fff;
     border: 1px solid #e1dfda;
 }
-.login-top{
+
+.login-top {
     height: 30px;
     border-bottom: 1px solid #e1dfda;
     padding: 10px 20px;
     line-height: 30px;
 }
-.login-top-left{
+
+.login-top-left {
     font-size: 16px;
     font-family: 'Microsoft YaHei';
     color: #ff002a;
 }
-.login-top-right{
+
+.login-top-right {
     font-family: 'Microsoft YaHei';
     color: #63625d;
 }
-.login-top .login-top-right a{
+
+.login-top .login-top-right a {
     color: #0088cc;
 }
-.login-bottom{
-    width:516px;
+
+.login-bottom {
+    /* width: 516px; */
     height: auto;
     padding: 50px 0px 74px 191px;
 }
-.username{
+
+.username {
     padding: 10px 0px;
 }
-.username .name{
+
+.username .name {
     float: left;
     font-size: 15px;
     font-family: 'Microsoft YaHei';
@@ -61,13 +70,15 @@
     text-align: right;
     line-height: 36px;
 }
-.nameinput{
+
+.nameinput {
     float: left;
     padding-left: 5px;
     display: inline;
     position: relative;
 }
-#loginid{
+
+.login-bottom .login-form .username input {
     line-height: 34px;
     font-size: 16px;
     vertical-align: middle;
@@ -77,10 +88,27 @@
     font-family: 'Microsoft YaHei';
     color: #000;
 }
- .index-1 {
+
+.index-1 {
     width: 258px;
     background: url(../images/register.png) no-repeat 10px 9px;
 }
+
+.index-2 {
+    width: 258px;
+    background: url(../images/register.png) no-repeat 10px -52px;
+}
+
+.index-3 {
+    width: 258px;
+    background: url(../images/register.png) no-repeat 10px -52px;
+}
+
+.index-4 {
+    width: 258px;
+    background: url(../images/register.png) no-repeat 10px -180px;
+}
+
 .inp-primary {
     height: 34px;
     width: 232px;
@@ -90,6 +118,7 @@
     border: 1px solid #cccccc;
     padding: 0 12px;
 }
+
 .inp {
     border-radius: 2px;
     border: 1px solid #cccccc;
@@ -97,4 +126,101 @@
     color: #000;
     font-family: 'Microsoft YaHei';
     outline: none;
+}
+
+.shandow {
+    height: 32px;
+    border: 2px solid #7fcbfe;
+    box-shadow: 0 0 3px #7fcbfe;
+}
+
+.shandowr {
+    height: 32px;
+    border: 2px solid #f77799;
+    box-shadow: 0 0 3px #f77799;
+}
+
+.login-remeber {
+    height: 55px;
+    padding-left: 140px;
+    line-height: 18px;
+    overflow: hidden;
+    padding-top: 5px;
+    color: #666666;
+    background: #fff;
+}
+
+.login-remeber label {
+    float: left;
+    cursor: pointer;
+    outline: none;
+    padding-right: 10px;
+}
+
+.login-remeber i {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    float: left;
+    border: 1px solid #55779b;
+    margin-top: 2px;
+}
+
+.login-remeber .clicked {
+    background: url(../images/register.png) no-repeat 0 -473px;
+    border: none;
+    width: 13px;
+    height: 13px;
+}
+
+.login-remeber span {
+    float: left;
+    margin-left: 24px;
+    display: inline;
+    font-family: 'Microsoft YaHei';
+}
+
+.login-remeber a {
+    float: left;
+    color: #0088ca !important;
+    display: inline;
+    /* white-space:nowrap; */
+}
+
+.login-button {
+    padding-left: 134px;
+    height: 36px;
+    overflow: hidden;
+}
+
+.login-button .sub {
+    width: 300px;
+    margin-left: 6px;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background: #e6133c;
+    font-size: 16px;
+    height: 36px;
+    width: 136px;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+
+.btn {
+    cursor: pointer;
+    border: 0;
+    text-align: center;
+    font-family: 'Microsoft YaHei';
+    transition: all 0.08s ease-in;
+    -moz-transition: all 0.08s ease-in;
+    -ms-transition: all 0.08s ease-in;
+    -o-transition: all 0.08s ease-in;
+    -webkit-transition: all 0.08s ease-in;
+    outline: none;
+}
+.btn-primary:hover{
+   background:  #FA2244;
 }
