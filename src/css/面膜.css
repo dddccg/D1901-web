@@ -327,12 +327,13 @@ a:hover{
     background: #f8f8f8;
     border-bottom: 1px solid #ddd;
     float: left;
-    display: inline;
+    
 }
 .filter-left{
-    float: left;
-    display: inline;
+    
+   
     width: 90px;
+    float: left;
     margin: 0 20px;
     color: #999;
     text-align: right;
@@ -340,11 +341,13 @@ a:hover{
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+    
 }
 .filter-right {
+
     width: 1060px;
     float: left;
-    display: inline;
+    
     background: #FFF;
     padding: 6px 0;
     padding-left: 20px;
@@ -362,6 +365,7 @@ a:hover{
     float: left;
     height: 22px;
     width: 56px;
+    font-size: 14px;
     line-height: 22px;
     background: #eee;
     color: #666;
@@ -377,6 +381,7 @@ a:hover{
     height: 22px;
     width: 50px;
     line-height: 22px;
+    font-size: 14px;
     background: #fff;
     color: #666;
     text-align: center;
@@ -409,11 +414,12 @@ a:hover{
     line-height: 48px;
     color: #999;
     margin: 4px 5px 4px 0;
-    display: inline;
+    
     cursor: pointer;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+
 .list-class li span {
     display: inline;
     text-align: center;
@@ -448,7 +454,7 @@ a:hover{
     line-height: 23px;
     white-space: nowrap;
     margin-right: 12px;
-    display: inline;
+    
     color: #333;
 }
 .max-h {
@@ -515,134 +521,477 @@ a:hover{
     border: 1px solid #ccc;
     font-size: 12px;
 }
-/* #nav{
-    height: 35px;
-    background: #000;
-}
-.nav-wrap{
-    width: 1190px;
-    height: 35px;
-    margin: 0 auto;
-}
-.navb .other{
-   width: 100px;
-   height: 35px;
-   line-height: 35px;
-   float: left; 
-   margin-right: 20px;
-    text-align: center;
-}
-.navb>ul>li:hover{
-    background: red;
-}
-.navb li>a{
-    display: inline-block;
-   font-size: 14px;
-    color: #FFF
-}
-.navb .frist-li{
-    width: 130px;
-    color: #FFF;
+.filter-item a{
     font-size: 14px;
-    line-height: 35px;
+    color: #000;
+}
+.fr-button-c {
     float: left;
-    position: relative;
-}
-.navb .frist-li:hover{
-    background: #000;
-}
-.frist-li>.shop-li{
-    height: 450px;
-    background: #000;
-    position: absolute;
-    left: 0;
-    top: 35px;
-    display: none;
-}
-.frist-li:hover>.shop-li{
-    display: block
-}
-.shop-li li{
-    text-align: left;
-    width: 130px
-    height: 35px;
-    margin-bottom: 2px;
-    position: relative;
-}
-.shop-li li>a{
-    color: #FFF;
-
-}
-.shop-li .li-inner{
-    width: 200px;
-    height: 300px;
-    border: 1px solid red;
-    display: none;
-    position: absolute;
-    left: 130px;
-    top:0;
-}
-.shop-li .li-inner:hover>li{
-    display: block
-} */
-/* .nav-wrap{
-    width: 1190px;
-    height: 35px;
-    margin: 0 auto;
-}
-
-.navb>a{
-    
-    float: left;
-    width: 100px;
-    height: 35px;
-    line-height: 35px;
-    color: #FFF;
+    height: 22px;
+    width: 56px;
+    font-size: 14px;
+    line-height: 22px;
+    background: #eee;
+    color: #666;
     text-align: center;
-    margin-right: 40px;
+    cursor: pointer;
 }
-.navb>a:hover{
-    background: red;
+.fr-button-c:hover {
+    background: #fef9ee;
+    color: #987144;
 }
- .navb>.current{
-     margin-left: 130px
- }
- .list{
-     position: relative;
- }
-.list ul{
-    width: 130px;
-    height: 420px;
-    background: #000;
-    padding-top: 5px;
-    display: none;
+.show2 {
+    height: 22px;
+    overflow: hidden;
+}
+.filter-right-item {
+    margin-right: 28px;
+    max-width: 88px;
+    height: 22px;
+    line-height: 22px;
+    float: left;
     
-
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
-:hover{
+.filter-right-item a:hover {
+    color: #333;
+    white-space: nowrap;
+}
+.multiselect label {
+    float: left;
+    margin-right: 25px;
+    line-height: 24px;
+    font-family: 'Microsoft YaHei';
+    white-space: nowrap;
+}
+.multiselect label input {
+    float: left;
+    
+    margin-top: 5px;
+}
+.multiselect label span{
+    font-size: 14px;
+}
+.btn-notsubmit {
+    height: 26px;
+    width: 70px;
+    background: #eee;
+    border: 1px solid #ccc;
+    color: #999;
+    font-size: 12px;
+}
+.show3 {
+    height: 22px;
+    overflow: hidden;
+}
+.fr-button-d {
+    float: left;
+    height: 22px;
+    width: 56px;
+    font-size: 14px;
+    line-height: 22px;
+    background: #eee;
+    color: #666;
+    text-align: center;
+    cursor: pointer;
+}
+.fr-button-d:hover {
+    background: #fef9ee;
+    color: #987144;
+}
+.show4 {
+    height: 22px;
+    overflow: hidden;
+}
+.fr-button-e {
+    float: left;
+    height: 22px;
+    width: 56px;
+    font-size: 14px;
+    line-height: 22px;
+    background: #eee;
+    color: #666;
+    text-align: center;
+    cursor: pointer;
+}
+.fr-button-e:hover {
+    background: #fef9ee;
+    color: #987144;
+}
+.ulfclass {
+    margin-left: -6px;
+}
+.ulfclass li {
+    padding: 0 6px;
+    height: 26px;
+    border: 1px solid #FFF;
+    float: left;
+    margin-right: 25px;
+    position: relative;
+}
+.ulfclass li:hover {
+    border: 1px solid #ddd;
+    z-index: 4;
+}
+.ulfclass li:hover .filter-item-pr {
+    background: url(../images/面膜图片/展\ 开\ \(1\).png) no-repeat right center;
+}
+.filter-item-pr {
+    padding-right: 14px;
+    font-size: 14px;
+    background: url(../images/面膜图片/展\ 开\ \(1\).png) no-repeat right center;
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 90px;
+}
+.ulfclass li:hover .showbg, .ulfclass li:hover span {
+    display: block;
+    cursor: pointer;
+}
+.ulfclass li span {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #FFF;
+    left: 0;
+    top: 26px;
+    display: none;
+    z-index: 2;
+}
+.showbg {
+    position: absolute;
+    left: -1px;
+    border: 1px solid #ddd;
+    background: #FFF;
+    top: 26px;
+    display: none;
+    min-width: 100%;
+    line-height: 21px;
+    padding: 5px 0;
+}
+.showbg dl {
+    float: left;
+}
+.showbg dd {
+    float: left;
+    line-height: 21px;
+    padding: 0 4px;
+    white-space: nowrap;
+    color: #333;
+    width: 70px;
+    
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.showbg label {
+    float: left;
+    margin-left: 20px;
+    margin-left: 15px;
+    line-height: 24px;
+    font-family: 'Microsoft YaHei';
+    white-space: nowrap;
+}
+.fr-button-f:hover {
+    background: #fef9ee;
+    color: #987144;
+}
+
+.fr-button-f {
+    float: left;
+    height: 22px;
+    width: 56px;
+    font-size: 14px;
+    line-height: 22px;
+    background: #eee;
+    color: #666;
+    text-align: center;
+    cursor: pointer;
+}
+.showbg label input {
+    float: left;
+    margin-top: 5px;
+    margin-top: 2px;
+}
+.ulfclass li .showbg label span {
+    float: left;
+    font-size: 14px;
+    margin-left: 6px;
+    margin-left: 3px;
+    
+    position: static;
+    width: auto;
+    height: 24px;
+    line-height: 24px;
+    background: #FFF;
+}
+/* 中间图片 */
+
+.main-images{
+   
+    margin-top:10px; 
+    background: #FFF
+}
+.first-images{
+    float: left;
+    width: 1190px;
+    height: auto;
+   padding: 15px 0px;
+}
+.first-images li{
+    float: left;
+    width: 230px;
+    height: 390px;
+    padding:10px;
+    margin-right: 8px;
+    margin-bottom:10px;
+    border: 1px solid #999;
+}
+.first-images li:hover{
+    border: 1px solid #E6133C;
+}
+/* 图片页 */
+.pro-show {
+    width: 210px;
+    border: 1px solid #eee;
+    padding: 3px 2px;
+    height: auto;
+    font-size: 14px;
+    padding-bottom: 0;
+    float: left;
+    
+}
+
+.pro-img {
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    position: relative;
+}
+.pro-img {
+    overflow: hidden;
+}
+.pro-money {
+    white-space: nowrap;
+}
+.pro-money {
+    height: 26px;
+    margin-top: 10px;
+    position: relative;
+}
+.money-fl {
+    float: left;
+    font-family: Verdana,Geneva,sans-serif;
+    color: #e6133c;
+    line-height: 26px;
+    font-size: 14px;
+}
+.money-fr {
+    float: right;
+}
+.money-fr span {
+    float: left;
+    margin-left: 3px;
+    display: block;
+    height: 18px;
+    margin-top: 4px;
+    line-height: 18px;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #fff;
+    padding: 0 3px;
+    background: #ff4c61;
+}
+.product-comment {
+    height: 42px;
+    clear: both;
+}
+.product-comment span {
+    float: left;
+    
+    display: block;
+    height: 18px;
+    margin-top: 4px;
+    line-height: 18px;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #ff4c61;
+    padding: 0 3px;
+    
+}
+.pro-name {
+    line-height: 21px;
+    color: #333;
+    height: 21px;
+    word-break: break-all;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.pro-name a {
+    float: left;
+    width: 130px;
+    height: 18px;
+    color: #000;
+    word-break: break-all;
+    text-decoration: none;
     display: block;
 }
-.list li{
-    height: 32px;
+.pro-discount {
+    line-height: 21px;
+    color: #e6133c;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: 5px;
+    text-overflow: ellipsis;
+    text-decoration: none;
+}
+.pro-discount a {
+    width: 100px;
+    height: 18px;
+    color: #e6133c;
+    text-decoration: none;
+    display: block;
+}
+.pro-top{
+    margin: 5px 0;
+}
+.pro-assess {
+    height: 21px;
+    line-height: 21px;
+    color: #666;
+    margin-bottom: 5px;
+}
+.pro-button {
+    padding: 4px 0 4px;
+    display: block;
+}
+.pro-button button.btn-primary {
+  
+    border: 1px solid #e6133c;
+    background: #fff;
+    color: #e6133c;
+}
+.pro-button button {
+    width: 100%;
+    height: 30px;
+}
+.pro-button：hover button.btn-primary{
+    background: #E6133C;
+    color: #FFF;
+}
+/* 分页 */
+
+.pagelan{
+    width: 1190px;
+    height: auto;
+    float: left;
+    margin: 20px auto;
+    text-align: center;
     
 }
-.left-list>ul a{
-    color: #FFF;
-    margin-left: 2px;
-    font-size: 14px;
-}
-.left-list>h2>a{
-    /* z-index: 2; */
-
-    /*color: #FFF;
-    font-size: 16px;
-    text-align: center;
+.tcdPageCode{
     display: inline-block;
-    width:130px;
-    height: 27px;
+    padding: 15px 20px;
+    text-align: left;color: #ccc;
+    text-align:center;
 }
-.left-list{
-    position: absolute;
-    top: -35px;
-    left: 0
-} */
+.tcdPageCode a{
+    display: inline-block;
+    color: #428bca;display: inline-block;
+    height: 25px;	
+    line-height: 25px;	
+    padding: 0 10px;
+    border: 1px solid #ddd;	
+    margin: 0 2px;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+.tcdPageCode a:hover{
+    text-decoration: none;
+    border: 1px solid #428bca;
+}
+.tcdPageCode span.current{
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 10px;
+    margin: 0 2px;
+    color: #fff;
+    background-color: #428bca;	
+    border: 1px solid #428bca;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+.tcdPageCode span.disabled{	
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 10px;
+    margin: 0 2px;	
+    color: #bfbfbf;
+    background: #f2f2f2;
+    border: 1px solid #bfbfbf;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+/* 最近浏览 */
+.re-show{
+    border: 1px solid #ddd;
+}
+.recommend-show {
+    margin-top: 20px;
+    
+    /* border: 1px solid #eee; */
+    position: relative;
+    float: left;
+    
+    width: 1188px;
+}
+.recommend-top {
+    height: 48px;
+    padding: 0 24px 0 15px;
+}
+.recommend-top-left {
+    float: left;
+    font-size: 18px;
+    color: #333;
+    font-family: 'Microsoft YaHei';
+    line-height: 48px;
+}
+.recommend-ul {
+    font-family: 'Microsoft YaHei';
+    padding: 0 4px;
+    position: relative;
+    height: 273px;
+}
+.ul-recommend li {
+    position: absolute!important;
+    width: 100%;
+    top: 0;
+}
+.pro-recommend {
+    float: left;
+    padding: 14px 14px 0;
+    border: 1px solid #FFF;
+    margin-left: 5px;
+    width: 200px;
+    background: #fff;
+}
+.pro-img {
+    height: 200px;
+    width: 200px;
+    position: relative;
+}
+.recommend-money {
+    text-align: center;
+    line-height: 42px;
+    font-size: 18px;
+    color: #e6133c;
+    font-family: Verdana,Geneva,sans-serif;
+}
