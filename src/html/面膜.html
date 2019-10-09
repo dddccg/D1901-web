@@ -1681,7 +1681,39 @@
             </div>
         </div>
     </div>
-
+    <!-- 综合排序 -->
+    <div class="container sequence-list clearfix">
+        <div class="wrap">
+            <div class="sequence-left">
+                <ul>
+                    <li class="sort">综合排序</li>
+                    <li class="xiao">销量</li>
+                    <li class="xiao">价格</li>
+                    <li class="xiao">评论</li>
+                    <li class="xiao">新品</li>
+                </ul>
+            </div>
+            <div class="left-money">
+                <input type="text" placeholder="¥最低价">
+                <span>-</span>
+                <input type="text"placeholder="¥最高价">
+            </div>
+            <div class="sequence-right">
+                    <div class="sequence-label fl" >
+                            <label><input type="checkbox" ><span>仅看有货</span></label>
+                            <label><input type="checkbox" ><span>百联配送</span></label>
+                            <label><input type="checkbox" ><span>跨境商品</span></label>
+                            <label><input type="checkbox" ><span>促销</span></label>
+                            <label><input type="checkbox" ><span>支持自提</span></label>
+                           
+                    </div>
+                    <div class="number-page fr">
+                        <p class="fl">1<span>/</span>4</p>
+                        <span class="fr">></span>
+                    </div>
+            </div>
+        </div>
+    </div>
     <!-- 主要图片 -->
     <div class="container main-images clearfix">
         <div class="first-images ">
@@ -3089,6 +3121,33 @@
                     $(this).find("i").hide().siblings().show()
                 })
 
+                // 滚动固定
+                $(window).scroll(function(){
+			// 获取 滚动距离
+			    var os = $(document).scrollTop();
+                // var oa = $(".main-content").outerHeight()+$(".home-search").outerHeight()+
+                //     $(".nav").outerHeight()+$(".header").outerHeight();
+			    if( os > 500 ){
+				   $(".sequence-list").css({
+					position:"fixed",
+                    left:0,
+                    right:0,
+                    
+                    top:0, 
+				  });
+				  $(".main-images").css({
+					marginTop:80
+				  })
+			  }else{
+				$(".sequence-list").css({
+					position:"static",
+					margin:"0 atuo"
+				});
+				$(".main-images").css({
+					marginTop:10
+				  })
+			  }
+		   });
 
 
                 var onOff = 1;
@@ -3157,7 +3216,21 @@
                     }
 
                 });
+                $(".pro-button .btn-primary").hover(function(){
+                    $(this).css({
+                        "background":"#e6133c",
+                        "color":"#fff"
 
+                    })
+                },function(){
+                    $(this).css({
+                        "background":"#fff",
+                        "color":"#e6133c"
+
+                    })
+                });
+
+                
 
                 $("img.none_cart").lazyload({ effect: "fadeIn" });
 
