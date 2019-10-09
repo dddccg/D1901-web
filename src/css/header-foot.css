@@ -1,0 +1,356 @@
+.cle:after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.fleft {
+    float: left;
+}
+
+.fright {
+    float: right;
+}
+
+/* 头部 */
+#tools {
+    background: #F7F7F7;
+    width: 100%;
+    /* border: 2px solid #ffffff; */
+    border-bottom: 1px solid #E9E9E9;
+    border-top: 1px solid #ffffff;
+    display: block;
+    position: relative;
+    font-family: 'Microsoft YaHei';
+}
+
+#tools>.wrap {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.bl-name {
+    width: auto;
+    float: left;
+    line-height: 30px;
+    color: #8d8d8d;
+    position: relative;
+    padding: 0 0 0 18px;
+    background: url(../images/blbz.png) 2px center no-repeat;
+}
+
+.bl-name>.text {
+    width: 156px;
+    font-size: 12px;
+    float: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.bl-name span {
+    display: block;
+    width: 12px;
+    /* font-size: 12px; */
+    padding-right: 4px;
+    height: 30px;
+    float: left;
+}
+
+.tools-left {
+    float: left;
+    width: auto;
+    line-height: 30px;
+    position: relative;
+    color: #666666;
+}
+
+.tools-left-text {
+    /* width:66px; */
+    float: left;
+}
+
+.tools-left-text>a {
+    margin: 0 auto;
+    padding: 0 10px 0 0;
+    /* width: 62px; */
+    /* height: 30px; */
+    display: block;
+}
+
+.tools-left-text .nav {
+    /* width: 12px; */
+    float: left;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.icon-shu {
+    color: #e5e5e5;
+}
+
+.icon-arrow {
+    color: #c5c5c5;
+}
+
+.tools-left-text .icon-arrow {
+    width: 12px;
+    float: left;
+    font-size: 13px;
+    margin-left: 4px;
+    transition: all .1s ease-in 0s;
+}
+
+.tools-left:hover {
+    background-color: #fff;
+    /* border: 1px solid #e2e2e2; */
+    box-shadow: 0 0 2px #CCC;
+}
+
+.tools-left:hover .tools-left-text .icon-arrow {
+    color: #c5c5c5;
+    transform: rotate(180deg);
+    transform-origin: center;
+    -webkit-transform: rotate(180deg);
+}
+
+.divshow {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    /* border: 1px solid #e2e2e2; */
+    box-shadow: 0 0 2px #CCC;
+    top: 31px;
+}
+
+.left-show-dl dd {
+    display: block;
+    margin-inline-start: 40px;
+}
+
+.tools .left-show {
+    left: -1px;
+    padding: 7px 12px;
+}
+
+.divshow .left-show-dl {
+    width: 222px;
+    line-height: 24px;
+}
+
+.left-show-dl dl dd {
+    padding: 0 5px;
+    width: 100px;
+    float: left;
+    margin-left: 1px;
+}
+
+.tools-info {
+    /* float: left; */
+    line-height: 30px;
+    /* width: 30px; */
+    margin-left: 10px;
+    text-align: center;
+    position: relative;
+    display: inline;
+}
+
+.tools-info {
+    color: #666;
+    font-family: 'Microsoft YaHei';
+}
+
+.tools-right {
+    float: right;
+}
+
+.tools-right ul li {
+    float: left;
+    position: relative;
+    display: inline;
+    height: 30px;
+    line-height: 30px;
+    margin-left: -1px;
+}
+
+.box a {
+    float: left;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+}
+
+.box>span {
+    position: absolute;
+    right: -1px;
+    /* float: left; */
+    font-size: 12px;
+    /* top: 9px; */
+}
+
+.box:hover {
+    background-color: #fff;
+    box-shadow: 0 0 2px #CCC;
+}
+
+.box a span {
+    float: left;
+}
+
+.box .icon-arrow {
+    /* float: left; */
+    transition: all .1s ease-in 0s;
+    font-size: 13px;
+}
+
+.box:hover .icon-arrow {
+    color: #c5c5c5;
+    transform: rotate(180deg);
+    transform-origin: center;
+    -webkit-transform: rotate(180deg);
+}
+
+.box .divshow dd {
+    width: 82px;
+    float: left;
+}
+
+.box .palm {
+    width: 310px;
+    left: 50%;
+    margin-left: -214px;
+    border: 1px solid #e2e2e2;
+    overflow: hidden;
+}
+
+.palm .palm-right {
+    float: left;
+    margin-left: 8px;
+    width: 141px;
+    text-align: center;
+    padding: 20px 0 4px;
+}
+
+.palm .palm-left {
+    float: left;
+    margin-left: 8px;
+    width: 141px;
+    text-align: center;
+    padding: 28px 0 4px;
+}
+
+.palm dd {
+    text-align: center;
+    padding: 0 20px;
+    line-height: 20px;
+    height: 20px;
+    white-space: nowrap;
+}
+
+/* 底部 */
+.footer {
+    min-width: 1190px;
+    margin: 0 auto;
+    font-family: 'Microsoft YaHei';
+    border: 1px;
+}
+
+.helpnav {
+    background: #f3f3f3;
+    min-width: 1190px;
+    padding: 24px 0;
+}
+
+.footer-center {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.help-list {
+    float: left;
+    width: 200px;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.help-list .help-title {
+    height: 40px;
+    line-height: 40px;
+    color: #000;
+    font-size: 16px;
+}
+
+.help-title span {
+    width: 40px;
+    height: 40px;
+    background: #333;
+    color: #FDFDFD;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 25px;
+    margin-right: 15px;
+}
+
+.help-list ul {
+    margin-left: 55px;
+    font-size: 13px;
+    line-height: 26px;
+    color: #555;
+}
+
+.help-list li a:hover {
+    text-decoration-line: underline;
+    color: #E6133C;
+}
+
+.bottomnav a:hover {
+    color: #E6133C;
+}
+
+.footer .bottomnav {
+    line-height: 24px;
+    text-align: center;
+    padding: 15px 0 0;
+    color: #999;
+    background: #f3f3f3;
+}
+
+.bottomnav span {
+    padding: 0 8px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.copyright span {
+    color: #ccc;
+}
+
+#footer>.bottomnav>a:hover {
+    color: #666
+}
+
+.police img {
+    width: 20px;
+    height: 20px;
+}
+
+.footer .bottomnav .police a {
+    display: inline-block;
+    text-decoration: none;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 10px;
+    color: #999;
+}
+
+.footer .bottomnav .police a:hover {
+    color: #999;
+}
