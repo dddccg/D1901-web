@@ -1,0 +1,107 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2147210",
+      "name": "竖",
+      "font_class": "shu",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "2210017",
+      "name": "打电话",
+      "font_class": "dadianhua",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "3692126",
+      "name": "下箭头",
+      "font_class": "arrow",
+      "unicode": "e50d",
+      "unicode_decimal": 58637
+    },
+    {
+      "icon_id": "4187580",
+      "name": "历史",
+      "font_class": "lishi",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "4354198",
+      "name": "客服",
+      "font_class": "kefu",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "4567167",
+      "name": "支付",
+      "font_class": "zhifu",
+      "unicode": "e645",
+      "unicode_decimal": 58949
+    },
+    {
+      "icon_id": "4735142",
+      "name": "登陆",
+      "font_class": "Fill",
+      "unicode": "e501",
+      "unicode_decimal": 58625
+    },
+    {
+      "icon_id": "6580430",
+      "name": "购物",
+      "font_class": "Shopping",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "7620630",
+      "name": "收 藏 (1)",
+      "font_class": "shoucang",
+      "unicode": "e647",
+      "unicode_decimal": 58951
+    },
+    {
+      "icon_id": "7722150",
+      "name": "礼物",
+      "font_class": "liwu",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "9147629",
+      "name": "回到顶部",
+      "font_class": "huidaodingbu",
+      "unicode": "e70a",
+      "unicode_decimal": 59146
+    },
+    {
+      "icon_id": "10001334",
+      "name": "05店主",
+      "font_class": "dianzhu",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "10172816",
+      "name": "二维码",
+      "font_class": "qrcode",
+      "unicode": "e502",
+      "unicode_decimal": 58626
+    },
+    {
+      "icon_id": "10296829",
+      "name": "购物 车",
+      "font_class": "gouwuche",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    }
+  ]
+}
