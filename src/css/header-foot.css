@@ -126,6 +126,7 @@
     /* border: 1px solid #e2e2e2; */
     box-shadow: 0 0 2px #CCC;
     top: 31px;
+    z-index: 1000;
 }
 
 .left-show-dl dd {
@@ -172,7 +173,7 @@
 .tools-right ul li {
     float: left;
     position: relative;
-    display: inline;
+    display: block;
     height: 30px;
     line-height: 30px;
     margin-left: -1px;
@@ -180,7 +181,7 @@
 
 .box a {
     float: left;
-    display: inline-block;
+    display: block;
     height: 30px;
     line-height: 30px;
     padding: 0 10px;
@@ -276,7 +277,7 @@
     float: left;
     width: 200px;
     margin: 0 10px;
-    display: inline-block;
+    display: block;
 }
 
 .help-list .help-title {

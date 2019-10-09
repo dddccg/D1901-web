@@ -178,11 +178,9 @@ li{
 }
 
 
-a:hover{
-    color:#FFF;
-}
 
-.nav{
+
+.navv{
     min-width: 1190px;
     
     height:30px;
@@ -191,6 +189,15 @@ a:hover{
     /* box-shadow:0 0 2px #DDD; */
 }
 
+.navv a:link,
+.navv a:visited {
+    color: #fff;
+    text-decoration: none
+}
+
+.navv a:hover {
+    color: yellow;
+}
 .top-nav{
     width:1190px;
     margin:0px auto;/*为了让盒子居中显示*/
