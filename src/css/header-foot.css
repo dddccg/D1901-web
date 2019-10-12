@@ -122,9 +122,9 @@
     display: none;
     position: absolute;
     background-color: #fff;
-    /* border: 1px solid #e2e2e2; */
     box-shadow: 0 0 2px #CCC;
     top: 31px;
+    z-index: 1000;
 }
 
 .left-show-dl dd {

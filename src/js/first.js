@@ -164,12 +164,18 @@ $('.return-top').click(function(){
             left:-0.1*$(this).width()/2,
             top:-0.1*$(this).height()/2
         })
+        $('.current-2 p').css({
+            'width':'100%'
+        })
     },function(){
         $(this).stop().animate({
             width:305,
             height:370,
             top:0,
             left:0
+        })
+        $('.current-2 p').css({
+            'width':'0%'
         })
     });
     $('.excellent img').hover(function(){
@@ -281,9 +287,13 @@ function change(index) {
 function change_2(index) {
     $(".wrapper-2>ol>li").eq(index).addClass('current-2').siblings().removeClass('current-2');
     $(".wrapper-2>ul>li").eq(index).stop().fadeIn().siblings().stop().fadeOut();
-    $('.wrapper-2>ol>li>p').eq(index).stop().animate({
+    $('.wrapper-2>ol>li').eq(index).find("p").css({
+        'display':'block',
+    }).stop().animate({
         width:'100%'
-    },2000).siblings().css({
-        'backgroundColor':'red'
+    },2000).parent().siblings().find("p").css({
+        'display':'none',
+        'width':'0'
     })
+    
 }
