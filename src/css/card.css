@@ -1,0 +1,66 @@
+.gift_head {
+    height: 96px;
+    background: #fff;
+}
+.gift_head .wrap {
+    width: 1190px;
+    height: 96px;
+    margin: 0 auto;
+    border: 1px solid red;
+    position: relative;
+}
+.gift_logo img{
+    margin-top: 20px;
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right: 1px solid gainsboro;
+}
+.banlogo img{
+    margin-top: 30px;
+}
+.gift_nav {
+    width: 600px;
+    height: 35px;
+    position: absolute;
+    left: 365px;
+    top: 62px;
+}
+.gift_nav li {
+    display: inline-block;
+    display: inline;
+    margin: 0 15px;
+    font-size: 16px;
+    font-family: \5FAE\8F6F\96C5\9ED1;
+}
+.gift_nav li a.cur {
+    border-bottom: 4px solid #ff4a4a;
+}
+.gift_nav li a {
+    padding: 0 10px 5px;
+    color: #333;
+}
+.gift_tit {
+    width: 245px;
+    height: 40px;
+    position: absolute;
+    top: 43px;
+    right: 0;
+}
+.gift_tit_p {
+    line-height: 20px;
+    padding-left: 36px;
+    font-size: 12px;
+    color: black;
+    font-family: "宋体";
+}
+.gift_tit_p b {
+    margin-left: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.gift_tit_p a {
+    margin: 0 8px;
+    color: #999;
+    cursor: default;
+    font-size: 12px;
+}

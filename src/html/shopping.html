@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/shopping.css">
+</head>
+
+<body>
+    <div id="trade-head">
+        <div class="wrap">
+            <div class="logo fl">
+                <a href="https://www.bl.com">
+                    <img src="../images/header-logo.png">
+                </a>
+            </div>
+            <div class="name fl">购物车</div>
+            <div class="login-message fr"> 现在&nbsp;<a href="javascript:void(0);"
+                    onclick="login()">登录</a>,您购物车中的商品将会被永久保存</div>
+            <input type="hidden" id="isLogin" name="isLogin" value="false" />
+        </div>
+    </div>
+    <div class="wrap clear">
+        <div class="cart-title fl">
+            <input type="hidden" id="orderAmount" value="" />
+            <input type="hidden" id="btnTag" value="" />
+            <div class="name fl">全部商品<span>5</span></div>
+            <div class="send-message fr">
+                <ul id="list1" style="width:350px;">
+                    <li id="summary-stock">
+                        <div class="dt"><p style="font-size: 13px;">配送至</p></div>
+                        <div class="dd">
+                            <div id="store-selector">
+                                <div class="text">
+                                    <div></div><b></b></div>
+                                <div onclick="$('#store-selector').removeClass('hover')" class="close"></div>
+                            </div>
+                            <!--store-selector end-->
+                            <div id="store-prompt"><strong></strong></div>
+                            <!--store-prompt end--->
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <section class="cartMain">
+        <div class="cartMain_hd">
+            <ul class="order_lists cartTop">
+                <li class="list_chk">
+                    <!--所有商品全选-->
+                    <input type="checkbox" id="all" class="whole_check">
+                    <label for="all"></label> 全选
+                </li>
+                <li class="list_con">商品信息</li>
+                <li class="list_price">单价</li>
+                <li class="list_amount">数量</li>
+                <li class="list_sum">金额</li>
+                <li class="list_op">操作</li>
+            </ul>
+        </div>
+
+        <div class="cartBox">
+            <div class="shop_info">
+                <div class="all_check">
+                    <!--店铺全选-->
+                    <input type="checkbox" id="shop_a" class="shopChoice">
+                    <label for="shop_a" class="shop"></label>
+                </div>
+                <div class="shop_name">
+                    <i>&nbsp;</i>
+                    <a href="javascript:;">i百联自营</a>
+                </div>
+            </div>
+            <div class="order_content">
+                <ul class="order_lists">
+                    <li class="list_chk">
+                        <input type="checkbox" id="checkbox_2" class="son_check">
+                        <label for="checkbox_2"></label>
+                    </li>
+                    <li class="list_con">
+                        <div class="list_img">
+                            <a href="javascript:;"><img src="../images/纸.jpg" alt=""></a>
+                        </div>
+                        <div class="list_text">
+                            <a href="javascript:;">清风 原木纯品金装纸150抽3包 中</a>
+                        </div>
+                    </li>
+                    <li class="list_price">
+                        <p class="price">￥9.8</p>
+                    </li>
+                    <li class="list_amount">
+                        <div class="amount_box">
+                            <a href="javascript:;" class="reduce reSty">-</a>
+                            <input type="text" value="1" class="sum">
+                            <a href="javascript:;" class="plus">+</a>
+                        </div>
+                    </li>
+                    <li class="list_sum">
+                        <p class="sum_price">￥9.8</p>
+                    </li>
+                    <li class="list_op">
+                        <p class="del">
+                            <a href="javascript:;" class="delBtn">移除商品</a>
+                        </p>
+                    </li>
+                </ul>
+                <ul class="order_lists">
+                    <li class="list_chk">
+                        <input type="checkbox" id="checkbox_3" class="son_check">
+                        <label for="checkbox_3"></label>
+                    </li>
+                    <li class="list_con">
+                        <div class="list_img">
+                                <a href="javascript:;"><img src="../images/zhi.jpg" alt=""></a>
+                        </div>
+                        <div class="list_text">
+                                <a href="javascript:;">清风 原木纯品金装纸150抽3包 中</a>
+                        </div>
+                    </li>
+                    <li class="list_price">
+                        <p class="price">￥50</p>
+                    </li>
+                    <li class="list_amount">
+                        <div class="amount_box">
+                            <a href="javascript:;" class="reduce reSty">-</a>
+                            <input type="text" value="1" class="sum">
+                            <a href="javascript:;" class="plus">+</a>
+                        </div>
+                    </li>
+                    <li class="list_sum">
+                        <p class="sum_price">￥50</p>
+                    </li>
+                    <li class="list_op">
+                        <p class="del">
+                            <a href="javascript:;" class="delBtn">移除商品</a>
+                        </p>
+                    </li>
+                </ul>
+                <ul class="order_lists">
+                    <li class="list_chk">
+                        <input type="checkbox" id="checkbox_6" class="son_check">
+                        <label for="checkbox_6"></label>
+                    </li>
+                    <li class="list_con">
+                        <div class="list_img">
+                                <a href="javascript:;"><img src="../images/纸.jpg" alt=""></a>
+                        </div>
+                        <div class="list_text">
+                                <a href="javascript:;">清风 原木纯品金装纸150抽3包 中</a>
+                        </div>
+                    </li>
+                    <li class="list_price">
+                        <p class="price">￥20</p>
+                    </li>
+                    <li class="list_amount">
+                        <div class="amount_box">
+                            <a href="javascript:;" class="reduce reSty">-</a>
+                            <input type="text" value="1" class="sum">
+                            <a href="javascript:;" class="plus">+</a>
+                        </div>
+                    </li>
+                    <li class="list_sum">
+                        <p class="sum_price">￥20</p>
+                    </li>
+                    <li class="list_op">
+                        <p class="del">
+                            <a href="javascript:;" class="delBtn">移除商品</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cartBox">
+            <div class="shop_info">
+                <div class="all_check">
+                    <!--店铺全选-->
+                    <input type="checkbox" id="shop_c" class="shopChoice">
+                    <label for="shop_c" class="shop"></label>
+                </div>
+                <div class="shop_name">
+                    <i>&nbsp;</i>
+                    <a href="javascript:;">i百联联营</a>
+                </div>
+            </div>
+            <div class="order_content">
+                <ul class="order_lists">
+                    <li class="list_chk">
+                        <input type="checkbox" id="checkbox_8" class="son_check">
+                        <label for="checkbox_8"></label>
+                    </li>
+                    <li class="list_con">
+                        <div class="list_img">
+                            <a href="javascript:;"><img src="../images/柚子.jpg" alt=""></a>
+                        </div>
+                        <div class="list_text">
+                            <a href="javascript:;">福建平和琯溪蜜柚 白肉柚子 2只礼盒装</a>
+                        </div>
+                    </li>
+                    <li class="list_price">
+                        <p class="price">￥80</p>
+                    </li>
+                    <li class="list_amount">
+                        <div class="amount_box">
+                            <a href="javascript:;" class="reduce reSty">-</a>
+                            <input type="text" value="1" class="sum">
+                            <a href="javascript:;" class="plus">+</a>
+                        </div>
+                    </li>
+                    <li class="list_sum">
+                        <p class="sum_price">￥80</p>
+                    </li>
+                    <li class="list_op">
+                        <p class="del">
+                            <a href="javascript:;" class="delBtn">移除商品</a>
+                        </p>
+                    </li>
+                </ul>
+                <ul class="order_lists">
+                    <li class="list_chk">
+                        <input type="checkbox" id="checkbox_9" class="son_check">
+                        <label for="checkbox_9"></label>
+                    </li>
+                    <li class="list_con">
+                        <div class="list_img">
+                            <a href="javascript:;"><img src="../images/牙刷.jpg" alt=""></a>
+                        </div>
+                        <div class="list_text">
+                            <a href="javascript:;">【个护优选】 飞利浦（PHILIPS）Hx 儿童牙刷</a>
+                        </div>
+                    </li>
+                    <li class="list_price">
+                        <p class="price">￥380</p>
+                    </li>
+                    <li class="list_amount">
+                        <div class="amount_box">
+                            <a href="javascript:;" class="reduce reSty">-</a>
+                            <input type="text" value="1" class="sum">
+                            <a href="javascript:;" class="plus">+</a>
+                        </div>
+                    </li>
+                    <li class="list_sum">
+                        <p class="sum_price">￥380</p>
+                    </li>
+                    <li class="list_op">
+                        <p class="del">
+                            <a href="javascript:;" class="delBtn">移除商品</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--底部-->
+            <div class="bar-wrapper">
+                <div class="bar-right">
+                    <div class="piece">已选商品<strong class="piece_num">0</strong>件</div>
+                    <div class="totalMoney">共计: <strong class="total_text">0.00</strong></div>
+                    <div class="calBtn">
+                        <a href="javascript:;">结算</a>
+                    </div>
+                </div>
+            </div>
+        
+    </section>
+    <section class="model_bg"></section>
+		<section class="my_model">
+			<p class="title">删除宝贝<span class="closeModel">X</span></p>
+			<p>您确认要删除该宝贝吗？</p>
+			<div class="opBtn">
+				<a href="javascript:;" class="dialog-sure">确定</a>
+				<a href="javascript:;" class="dialog-close">关闭</a>
+			</div>
+        </section>
+    <script src="../js/jquery-1.11.0.min.js"></script>        
+    <script src="../js/carts.js"></script>
+   <script src="../js/location.js"></script>
+   
+</body>
+
+</html>

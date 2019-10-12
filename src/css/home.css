@@ -1,0 +1,331 @@
+/* 头部 */
+.header-top {
+    width: 1190px;
+    height: 96px;
+    margin: 0 auto;
+}
+
+.logo-one {
+    margin: 18px 260px 0 0;
+}
+
+.header-search {
+    margin-top: 28px;
+}
+
+.search-box {
+    width: 400px;
+    height: 31px;
+    border: 2px solid #FF3D3D;
+}
+
+.search-btn {
+    width: 85px;
+    height: 35px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    background: #FF3D3D;
+}
+/* 导航 */
+.header-wrap {
+	background-color: #333333;
+	width: 100%;
+}
+
+.navwrap {
+	width:1190px;
+	margin: 0 auto;
+	height: 35px;
+}
+
+#nav {
+	height: 36px;
+	width: 1190px;
+	margin: 0 auto;
+	position: relative;
+	padding: 0;
+	z-index: 99;
+}
+
+.navbar {
+	height: 36px;
+	padding-left: 190px;
+	position: relative;
+}
+
+.navbar a {
+	float: left;
+	width: auto;
+	text-align: center;
+	height: 35px;
+	line-height: 35px;
+	color: #fff;
+	padding: 0 25px;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: "\5FAE\8F6F\96C5\9ED1";
+	white-space: nowrap;
+	position: relative;
+}
+
+.navbar a.first {
+	border-left: 0 none;
+}
+
+.navbar a.last {
+	border-right: 0 none;
+}
+
+.navbar a:hover {
+	background-color: #E6133C;
+	color: #fff;
+}
+
+.navbar a.current {
+	background-color: #E6133C;
+}
+
+.navbar a:hover {
+	text-decoration: none
+}
+
+.navbar a.current:hover {
+	color: #fff;
+}
+
+.navbar .navbt {
+	width: 105px;
+	height: 30px;
+	position: absolute;
+	top: 3px;
+	right: 10px;
+	background: url(../images/navbt.jpg) no-repeat;
+	border: 0 none;
+	float: none;
+	font-size: 14px;
+	line-height: 30px;
+	padding: 0;
+}
+
+a.navbt span {
+	background: url(../images/iconmap.jpg) no-repeat 1px 3px;
+	padding-left: 18px
+}
+
+.navbar a.navbt:hover {
+	background: transparent url(../images/navbt-hover.jpg) no-repeat
+}
+
+.navbar a.navbt:hover span {
+	background-image: url(../images/iconmap-hover.jpg)
+}
+
+.pros {
+	position: absolute;
+	top: -1px;
+	left: 0;
+	z-index: 1000;
+	width: 190px;
+}
+
+.pros h2 {
+	width: 190px;
+	height: 35px;
+	line-height: 35px;
+	color: #fff;
+	padding-left: 16px;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.subpage h2 {
+	background: url(../images/icon-dropdown.jpg) no-repeat 122px center;
+	cursor: pointer;
+}
+
+.subpage .prosul {
+	display: none;
+}
+
+.prosul {
+	padding-top:10px ;
+	width: 190px;
+	overflow: hidden;
+	height: 425px;
+	background:#171415;
+	opacity: .9;
+}
+
+.prosul li,
+.prosul i {
+	background: url(../images/iconcatg.png) no-repeat;
+}
+
+li.food {
+	background-position: 10px 5px;
+}
+
+li.enjoy {
+	background-position: 10px -45px;
+}
+
+li.women {
+	background-position: 10px -95px;
+}
+
+li.life {
+	background-position: 10px -145px;
+}
+
+li.travel {
+	background-position: 10px -195px;
+}
+
+li.goods {
+	background-position: 10px -245px;
+}
+
+.prosul li {
+	line-height: 29px;
+	height: 29px;
+	overflow: hidden;
+	margin-right: 3px;
+	padding-left: 38px;
+}
+.prosul li:hover{
+	background: #888888;
+}
+
+.prosul li.prosahover {
+	background-color: #888888;
+	margin-right: 0;
+	padding-right: 3px;
+}
+
+.prosul a {
+	color: #ffd0c0;
+	padding-right: 8px;
+	padding-right: 6px;
+	white-space: nowrap;
+	display: inline-block;
+	height: 50px;
+}
+
+.prosul li.prosahover a {
+	color: #636363;
+}
+
+.prosul li a.ti {
+	font-size: 14px;
+	font-family: "\5FAE\8F6F\96C5\9ED1";
+	color: #fff;
+}
+
+.prosul li.prosahover a.ti {
+	color: #FFFFFF;
+}
+
+.prosul li a:hover {
+	text-decoration: underline;
+}
+
+.prosul li.nochild a:hover {
+	color: #fff;
+}
+
+.prosul li i {
+	float: right;
+	display: block;
+	width: 3px;
+	height: 50px;
+	text-indent: -999em;
+	background-position: 0 -286px;
+	padding-right: 12px;
+}
+
+.prosul li.prosahover i {
+	background-position: 0 -336px;
+}
+
+.prosul li.last {
+	border-bottom: 0 none;
+}
+
+.prosul li.hotareas {
+	background-image: none;
+	padding-left: 12px;
+	line-height: 26px;
+	height: 106px;
+	overflow: hidden;
+}
+
+.prosul li.hotareas i {
+	line-height: 30px;
+	margin-top: -2px;
+	height: 40px;
+	background-position: 0 -279px;
+}
+
+.prosul li.hotareas a {
+	line-height: 30px;
+	height: 30px;
+}
+
+.prosul li.hotareas a.hot {
+	background-position: right 0;
+}
+
+.prosul li h2 {
+	padding-left: 0;
+	line-height: 40px;
+	display: inline;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.prosul li.prosahover h2 {
+	color: #d03322;
+}
+
+.prosmore {
+	padding: 15px 0 15px 15px;
+	position: absolute;
+	z-index: 999;
+	left: 190px;
+	top: 35px;
+	font-size: 13px;
+	background-color: #F9F9F9;
+	border-left: 0 none;
+	width: 980px;
+	height: 405px;
+}
+
+.prosul .prosmore {
+	text-align: left;
+}
+
+.prosul .prosmore span {
+	float: left;
+	height: 36px;
+	width: 107px;
+	line-height: 22px;
+}
+
+.prosul li .prosmore a {
+	height: 18px;
+	line-height: 18px;
+	padding: 0 4px;
+}
+
+.prosmore em {
+	font-weight: 400;
+	padding-top: 9px;
+	display: inline-block;
+}
+
+.prosmore em.morehot {
+	background: url(../images/icon-hot-more.png) right top no-repeat;
+	padding-right: 22px;
+}

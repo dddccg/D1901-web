@@ -1,0 +1,274 @@
+/* 头部 */
+.header-top {
+    width: 1190px;
+    height: 96px;
+    margin: 0 auto;
+}
+
+.logo-one {
+    margin: 18px 80px 0 0;
+}
+
+.logo-two {
+    margin: 18px 50px 0 0;
+}
+
+.header-search {
+    margin-top: 28px;
+}
+
+.search-box {
+    width: 400px;
+    height: 31px;
+    border: 2px solid #0D8EEA;
+}
+
+.search-btn {
+    width: 85px;
+    height: 35px;
+    border: none;
+    background: #0D8EEA;
+}
+
+/* 导航 */
+.wrap {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.cf:before,
+.cf:after,
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.cf:after,
+.clearfix:after {
+    clear: both;
+}
+
+.cf,
+.clearfix {
+    clear: both;
+    *zoom: 1;
+}
+
+#nav {
+    width: 100%;
+    min-width: 1200px;
+    height: 35px;
+    background-color: #F5F5F5;
+    border-bottom: 1px solid #363131;
+}
+
+#nav ul li {
+    float: left;
+}
+
+#nav ul li:first-child {
+    margin-left: 17%;
+}
+
+#nav ul li {
+    width: 86px;
+    text-align: center;
+}
+
+#nav ul li a {
+    font-size: 14px;
+    color: black;
+    line-height: 35px;
+    display: inline-block;
+}
+.cat_wrap {
+    box-shadow: 1px 1px 2px #bfbcbc;
+    box-shadow: 0 -4px 8px 0 rgba(7, 17, 27, .1), 0 4px 8px 0 rgba(7, 17, 27, .1);
+    background: #fff;
+    width: 190px;
+    position: absolute;
+    z-index: 999;
+    top: -35px;
+}
+
+.cat_wrap .cat_title {
+    width: 190px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    background: #363131;
+}
+
+.cat_wrap .cat_header {
+    height: 425px;
+}
+
+.cat_header {
+    width: 190px;
+    background: #0897DE;
+}
+
+.cat_wrap .cat_list div {
+    background: #0897DE;
+}
+
+.cat_wrap .cat_list div li {
+    float: left;
+    color: #323232;
+    font-size: 14px;
+    height: 85px;
+}
+
+.cat_wrap .cat_list div li:first-child {
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+.cat_wrap .cat_list {
+    cursor: pointer;
+}
+
+.cat_wrap .cat_list div.active {
+    position: relative;
+    z-index: 999;
+    background: #FFFFFF;
+    border-bottom: 1px solid #0897DE;
+}
+
+.clearfix li p a {
+    color: white;
+}
+
+/*banner浮层滑动显示弹框*/
+.cat_subcont {
+    display: none;
+}
+
+.cat_subcont.active {
+    display: block;
+}
+
+.cat_subcont .cat_sublist {
+    position: absolute;
+    z-index: 998;
+    top: 35px;
+    left: 190px;
+    height: 425px;
+    width: 740px;
+    background: #fff;
+    border-top: 1px solid #0897DE;
+    border-right: 1px solid #0897DE;
+    border-bottom: 1px solid #0897DE;
+}
+
+.cat_subcont .cat_sublist .fore1 {
+    width: 740px;
+}
+
+.cat_subcont .cat_sublist .fore1 .fore_list {
+    width: 232px;
+    height: 150px;
+    float: left;
+    padding: 0 20px;
+}
+
+.cat_subcont .cat_sublist .fore1 .fore_list h3 {
+    font-size: 13px;
+    color: #000000;
+    padding: 5px;
+    border-bottom: 1px dotted #d3d3d3;
+}
+
+.cat_subcont .cat_sublist .fore1 .fore_list h3 a {
+    font-size: 12px;
+    color: black;
+}
+
+.cat_subcont .cat_sublist .fore1 .fore_list li {
+    float: left;
+    padding: 5px;
+}
+
+.cat_subcont .cat_sublist .fore1 .fore_list li a {
+    font-size: 12px;
+    color: gray;
+}
+
+.cat_subcont .cat_sublist .fore1 .fore_list li a:hover {
+    color: #00a1ea;
+    text-decoration: underline;
+}
+
+.vertical {
+    font-size: 12px;
+    color: grey;
+}
+/* 轮播图 */
+.banner-box {
+    width: 800px;
+    height: 425px;
+    margin-left: 220px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.banner-box .img {
+    width: 5000PX;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.banner-box .img li {
+    float: left;
+}
+
+.banner-box .li {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+}
+
+.banner-box .li li {
+    width: 15px;
+    height: 15px;
+    background: #333333;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.banner-box .li .index {
+    background: #0897DE;
+    width: 30px;
+    border-radius: 10px;
+}
+/* 轮播图的右侧边栏 */
+.sidebar{
+    width:200px;
+    height: 425px;
+}
+/* 轮播图的下边栏 */
+.banner-bottom{
+    height:160px;
+    width: 1190px;
+    margin:0 auto;
+    border: 1px solid gainsboro;
+    border-top:none;
+}
+
+.border-col{
+    border-left: 1px solid gainsboro;
+    border-right: 1px solid gainsboro;
+}
+/* 降价新闻 */
+.news-list{
+    width:1190px;
+    margin: 0 auto;
+}
