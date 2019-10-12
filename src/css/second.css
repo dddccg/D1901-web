@@ -139,6 +139,7 @@ img{cursor:pointer}
     height: 35px;
     line-height: 35px
     
+    
 }
 .nav-leftfont>i{
     display: inline-block;
@@ -148,7 +149,7 @@ img{cursor:pointer}
     margin-left: 10px;
     background: url(../images/fresh_sprite.png) no-repeat 0 -101px;
 }
-.nav-leftfont>a{
+ul>.nav-leftfont>a{
     color: #fff;
     margin-left: 25px;
     color: #FFF;
@@ -165,13 +166,14 @@ img{cursor:pointer}
     display: inline-block;
     background: #00AF90;
     opacity: .8;
+    display: none;
 }
 .blank>li>a{
     color: #fff;
     width: 100%;
     display: inline-block;
 }
-.sanji>a{
+li>.sanji>a{
      color: #FFF;
      line-height: 20px;
      display: block;
@@ -391,4 +393,12 @@ img{cursor:pointer}
 }
 .lazy-fn>li:hover{
     border: 1px solid #00AF90;
+}
+.fresh-bottom-icon{
+    font-family: 'Microsoft YaHei';
+    text-align: center;
+    padding: 20px 0 20px;
+    height: 38px;
+    overflow: hidden;
+    box-sizing: content-box;
 }

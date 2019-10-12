@@ -42,14 +42,21 @@ gulp.task('js', function () {
 });
 // 处理图片
 gulp.task("img",function(){
-    gulp.src(app.src+"images/*.*")
+    gulp.src(app.src+"images/*/*.*")
     .pipe(imagemin())
     .pipe(gulp.dest(app.dist+"images"))
     .pipe(connect.reload());
 });
+//fonts
+gulp.task("fonts",function(){
+    gulp.src(app.src+"fonts/*.*")
+    
+    .pipe(gulp.dest(app.dist+"fonts"))
+    .pipe(connect.reload());
+});
 
 // build 构建生产环境的代码
-gulp.task("build",['html','css','js','img']);
+gulp.task("build",['html','css','js','img','fonts']);
 
 gulp.task("server",function(){
     connect.server({
@@ -62,4 +69,6 @@ gulp.task("server",function(){
     gulp.watch("src/css/*.css",['css']);
     gulp.watch("src/js/*.js",['js']);
     gulp.watch("src/images/*.*",["img"]);
+    gulp.watch("src/fonts/*.*",["fonts"]);
+
 })

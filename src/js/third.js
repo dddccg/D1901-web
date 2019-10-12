@@ -103,3 +103,13 @@
         $(this).find('ul').stop().slideUp(300);
     });
 })
+//第四
+;$(function () {
+    $("#golbal-nav>ul>li").hover(function () {
+        var index = $(this).index();
+        $(this).addClass('active').siblings().removeClass('active');
+        $(this).find('.nav-show').stop().show();
+    },function(){
+        $(this).find('.nav-show').stop().hide();
+    });
+})
