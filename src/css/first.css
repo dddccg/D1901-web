@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+/* 轮播图 */
+.wrapper ul,ol {
+    list-style: none;
+}
+.wrapper {
+    width: 785px;
+    height: 430px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 190px;
+}
+.wrapper-2{
+    width: 305px;
+    height: 370px;
+    overflow: hidden;
+}
+.wrapper-2 img{
+    width: 305px;
+    height: 370px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.wrapper>ul>li{
+    width: 785px;
+    height: 430px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    display: none;
+}
+.wrapper-2>ul>li{
+    width: 305px;
+    height: 370px;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    display: none;
+}
+.wrapper>ol{
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    width: 210px;
+}
+.wrapper-2>ol{
+    position: absolute;
+    left: 33px;
+    bottom: 10px;
+    width: 210px;
+}
+.wrapper>ol>li{
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #abc;
+}
+.wrapper-2>ol>li{
+    float: left;
+    width: 30px;
+    height: 6px;
+    overflow: hidden;
+    margin: 0 5px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #abc;
+}
+.wrapper-2>ol>li>p{
+    width: 0%;
+    height: 6px;
+    background: yellow;
+}
+.wrapper ol li.current,.wrapper-2 ol li.current-2{
+    background-color: pink;
+}
+.prev{
+    width: 32px;
+    height: 40px;
+    position: absolute;
+    top: 195px;
+    border: none;
+    display: none;
+    z-index: 2000px;
+    background: url('../images/first/left1.png') no-repeat,#333;
+}
+.next{
+    width: 32px;
+    height: 40px;
+    position: absolute;
+    top: 195px;
+    right: 0;
+    border:none;
+    display: none;
+    z-index: 2000;
+    background: url('../images/first/right1.png'),#333;
+}
+.squer{
+    width: 1190px;
+    height: 450px;
+    margin: 0 auto;
+    position: relative;
+}
+.bg{
+    width: 100%;
+    height: 430px;
+    background: #83AD9F;
+    position: relative;
+}

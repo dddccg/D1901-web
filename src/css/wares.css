@@ -1,0 +1,18 @@
+.wrap{
+    width: 1190px;
+    margin: 0 auto;
+    background: #fff;
+}
+.wareshow{
+    width: 100%;
+    padding: 10px 0 20px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 30px;
+}
+.crumb{
+     float: left;
+    font-family: SimSun;
+    line-height: 24px;
+    width: 630px;
+    padding-top: 13px;
+}
