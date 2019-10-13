@@ -25,14 +25,11 @@
     display: block;
     position: relative;
     font-family: 'Microsoft YaHei';
-    z-index: 2;;
 }
 
-#tools>.wp {
+#tools>.wrap {
     width: 1190px;
     margin: 0 auto;
-    height: 30px;
-
 }
 
 .bl-name {
@@ -79,10 +76,14 @@
 .tools-left-text>a {
     margin: 0 auto;
     padding: 0 10px 0 0;
+    /* width: 62px; */
+    /* height: 30px; */
     display: block;
 }
 
-.tools-left-text>.nav1{
+.tools-left-text .nav {
+    /* width: 12px; */
+    float: left;
     display: block;
     overflow: hidden;
     white-space: nowrap;
