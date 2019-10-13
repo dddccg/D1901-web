@@ -45,7 +45,7 @@ $('.return-top').click(function(){
         
     })
     //a 的移入效果
-    $('.user-right a,.nav a,.news a,.login a').hover(function(){
+    $('.user-right a,.content a,.your-like a,.navv a,.news a,.login a').hover(function(){
         $(this).css({
             'color':'red'
         })
