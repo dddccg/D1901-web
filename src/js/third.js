@@ -113,3 +113,27 @@
         $(this).find('.nav-show').stop().hide();
     });
 })
+// 轮播图
+$(document).ready(function () {
+    var list = [{
+        imgUrl: '../images/1318239435.jpg',
+        href: '#'
+        }, {
+        imgUrl: '../images/995176789.jpg',
+        href: '#'
+        }, {
+        imgUrl: '../images/1909730769.jpg',
+        href: '#'
+        }, {
+        imgUrl: '../images/979408397.jpg',
+        href: '#'
+        }]
+    
+    $('.global-banner').fade({
+        url: list,
+        boxWid:"100%",
+        boxHei:410
+    }).css({
+        margin:'0 auto'
+    })
+})
