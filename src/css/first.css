@@ -1,4 +1,153 @@
 @charset "utf-8";
+<<<<<<< HEAD
+=======
+*{
+    margin: 0;
+    padding: 0;
+}
+.fixed a,.header a{
+    text-decoration: none;
+    color: #666;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.fixed{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0px;
+    border-bottom: 1px solid #666;
+    background: #fff;
+    z-index: 1000;
+    display: none;
+}
+.fixed-center{
+    width: 1190px;
+    height: 70px;
+    margin: 10px auto;
+}
+.fixed p{
+    width: 52px;
+    height: 20px;
+}
+.icon{
+    width: 122px;
+    height: 49px;
+    margin-left: 30px;
+}
+.icon img{
+    width: 100%;
+}
+.catalogue {
+    width: 52px;
+    height: 39px;
+    line-height: 30px;
+    background: #fff url(https://img.iblimg.com/respc-1/resources/v4.1/widget/fileheader/i/filenavicon-1.png) no-repeat center 7px;
+    color: #bbb;
+}
+.wrap-2{
+    width: 1190px;
+    position: absolute;
+    top:70px;
+    display: none;
+}
+.search-2 {
+    background: red;
+    margin: 5px 10px 15px 200px;
+}
+.search-text-2 {
+    width: 426px;
+    height: 35px;
+    border: 2px solid red;
+    padding: 0 10px;
+    outline: none;
+}
+.search-submit-2 {
+    width: 85px;
+    height: 35px;
+    outline: none;
+    line-height: 35px;
+    background: red;
+    color: #fff;
+    border: red;
+    padding: 0;
+}
+.login{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.login a{
+    text-decoration: none;
+}
+.header{
+    width: 1190px;
+    height: 96px;
+    margin:0 auto;
+}
+.logo{
+    width: 410px;
+    height: 60px;
+    margin-top: 18px;
+}
+.spe{
+    margin-left: 30px;
+}
+.sea{
+    width: 580px;
+    height: 63px;
+}
+.navv{
+    width: 500px;
+    height: 30px;
+    line-height: 30px;
+    color: #666;
+}
+.header>.navv>a{
+    color: #666;
+    text-decoration: none;
+}
+.navv span{
+    display: inline;
+    margin: 5px;
+}
+.search{
+	background: red;
+    margin-top: 25px
+}
+.search-text{
+	width: 426px;
+	height: 35px;
+    border: 2px solid red;
+    padding: 0 10px;
+    outline: none;
+}
+.search-submit{
+	width: 85px;
+    height: 35px;
+    outline: none;
+	line-height: 35px;
+	background: red;
+	color: #fff;
+	border:red;
+    padding: 0;
+}
+.anfubao{
+    width: 122px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border: 1px solid #666;
+    color: #666;
+    margin-top: 25px;
+    margin-right: 20px;
+    font-size:12px;
+    background: url(../images/first/header-right-icon.png) no-repeat 110px 13px;
+}
+>>>>>>> ab8b25904b2d33ad99487ec279e1c8a0ba730898
 
 /* 轮播图 */
 .wrapper ul,ol {

@@ -1,0 +1,402 @@
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0;}
+header,footer,section,article,aside,nav,hgroup,address,figure,figcaption,menu,details{display:block;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;font-weight:normal;}
+html,body,fieldset,img,iframe,abbr{border:0;}
+i,cite,em,var,address,dfn{font-style:normal;}
+[hidefocus],summary{outline:0;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6,small{font-size:100%;}
+sup,sub{font-size:83%;}
+pre,code,kbd,samp{font-family:inherit;}
+q:before,q:after{content:none;}
+textarea{overflow:auto;resize:none;}
+label,summary{cursor:default;}
+a,button{cursor:pointer;}
+h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:bold;}
+del,ins,u,s,a,a:hover{text-decoration:none;}
+body,textarea,select,keygen,legend{font:12px/1.14 arial,\5b8b\4f53;color:#333;outline:0;}
+body{background:#fff;}
+img{cursor:pointer}
+
+.header{
+    height: 96px;
+   width: 100%;
+}
+.wrp{
+    width: 1190px;
+    margin:0 auto;
+    height: 96px;
+    position: relative;
+    /* border: 1px solid */
+}
+.header-logo{
+    width: 410px;
+    height: 60px;
+    margin-top: 18px;
+    float: left;
+    /* border: 1px solid; */
+    overflow: hidden;
+}
+.logo{
+    float: left;
+}
+.secondary-logo{
+    float: left;
+    margin-left: 25px;
+}
+.header-search{
+    width: 780px;
+    position: absolute;
+    left: 415px;
+    margin-top: 25px;
+    
+}
+.header-search-top{
+    width: 516px;
+    height: 35px;
+    border: 2px solid red;
+}
+.top-input{
+    padding: 2px 0 2px 10px;
+    float: left;
+}
+.top-input>input{
+    color: #A9A9A9;
+    height: 19px;
+    line-height: 19px;
+    border: 0;
+    width: 406px;
+    font-size: 13px;
+    font-family: 'Microsoft YaHei';
+    vertical-align: middle;
+    padding: 6px 0;
+    outline: none;
+}
+.header-search-button{
+    height: 35px;
+    width: 85px;
+    float: right;
+    /* border: 1px solid; */
+}
+.header-search-button button{
+    height: 35px;
+    width: 85px;
+    border: 0;
+    background: #ff3d3d
+}
+.header-search-font{
+    width: 490px;
+    overflow: hidden;
+    clear: both;
+    height: 28px;
+    line-height: 28px;
+    font-family: 'Microsoft YaHei';
+    margin-left: -5px;
+}
+.header-search-font>a{
+    color: #999;
+    display: inline-block;
+    margin-right: 5px;
+    margin-left: 5px;
+    display: inline-block;
+}
+.header-search-font>a:hover{
+    color: red;
+    text-decoration: underline;
+}
+.header-search-font>span{
+    display: inline-block;
+    color: #e5e5e5;
+    margin-left: 5px;
+    display: inline-block;
+}
+.nav{
+    width: 100%;
+    height: 34px;
+    border-bottom: 1px solid #707070;
+    background: #f5f5f5;
+    z-index: 2000;
+}
+.nav-list{
+    width: 1190px;
+    margin: auto;
+    height: 34px;
+}
+.nav-left{
+    float: left;
+    height: 35px;
+    width: 190px;
+    position: relative;
+    font-family: 'Microsoft YaHei';
+    background: #000;
+    color: #fff;
+    font-size: 14px;
+    z-index: 100;
+}
+.nav-leftfont{
+    cursor: pointer;
+    height: 35px;
+    line-height: 35px
+}
+.nav-leftfont>i{
+    display: inline-block;
+    width: 14px;
+    height: 12px;
+    margin-top: 12px;
+    margin-left: 10px;
+    background: url(../images/fresh_sprite.png) no-repeat 0 -101px;
+}
+ul>.nav-leftfont>a{
+    color: #fff;
+    margin-left: 25px;
+    color: #FFF;
+    font-size: 14px;
+    line-height: 35px;
+    display: inline-block;
+}
+.blank{
+    width: 166px;
+    height: 408px;
+    padding: 4px 4px 10px 20px;
+    font-family: "Microsoft YaHei";
+    font-size: 12px;
+    display: inline-block;
+    background: #00AF90;
+    opacity: .8;
+    display: none;
+}
+.blank>li>a{
+    color: #fff;
+    width: 100%;
+    display: inline-block;
+}
+li>.sanji>a{
+     color: #FFF;
+     line-height: 20px;
+     display: block;
+     padding: 0 6px;
+     margin-left: 3px;
+     white-space: nowrap;
+     font-size: 12px;
+     float: left;
+     
+}
+.sanji>a:hover{
+    background: #00F4AE;
+}
+.sanji{
+    padding-right:14px;
+}
+.nav-right{
+    padding-left: 190px;
+    font-family: 'Microsoft YaHei';
+    font-size: 15px;
+    color: #000;
+    line-height: 34px;
+    height: 34px;
+}
+.nav-right>ul{
+    float: left;
+    position: relative;
+}
+.nav-right>ul>li{
+    float: left;
+    padding: 0 28px;
+}
+.nav-right>ul>li>a{
+    color: #000;
+    display: block;
+    height: 33px;
+    position: relative;
+    overflow: hidden;
+}
+.nav-right>ul>li>a:hover{
+    border-bottom: 2px solid #00AF90;
+    color: #00AF90;
+}
+.nav-right>.fresh-nav-icon{
+    float: right;
+    background: url(../images/fresh-nav-icon.png) no-repeat left;
+    padding-left: 32px;
+    color: #666;
+    font-size: 12px;
+    white-space: nowrap;
+}
+.nav-right>.fresh-nav-icon:hover{
+   color:#00AF90;
+}
+.fresh-banner{
+    width: 100%;
+    height: 426px;
+    position: relative;
+}
+.rollBody{
+    min-width: 1190px;
+    height: 426px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+}
+
+.rollBody >ul>li{
+    width: 100%;
+    height: 426px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.rollBody >ul>li>img{
+    margin: auto;
+    display: block;
+}
+.rollBody>ol {
+    position: absolute;
+    right: 50%;
+    margin-right: -95px;
+    bottom: 10px;
+    width: 190px;
+}
+.rollBody>ol>li {
+    float: left;
+    margin: 0 5px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #C8C5DC;
+    width: 12px;
+    height: 12px;
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.rollBody>ol>li.current {
+    background-color: #00AF90;
+}
+.wrap{
+    width: 1190px;
+    margin: auto;
+   clear: both;
+}
+.clearfix{
+    clear: both;
+}
+.fresh-ad{
+    height: 200px;
+}
+.fresh-ad>ul{
+    width: 1190px;
+    height: 200px;
+}
+.fresh-ad ul li{
+    float: left;
+}
+.fresh-main{
+    font-family: 'Microsoft YaHei';
+    clear: both;
+}
+.fresh-title{
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 2px solid #000;
+    font-size: 24px;
+    color: #000;
+    margin-top: 20px;
+}
+.fresh-title>a{
+    color: #666666;
+    text-decoration: none;
+}
+.fresh-title>i{
+    display: block;
+    float: left;
+    width: 3px;
+    height: 16px;
+    background: #00af90;
+    margin: 17px 11px 17px 3px;
+}
+.lazy-fn{
+    height: 193px;
+    display: block;
+    background: none;
+    width: 1200px;
+}
+.lazy-fn>li{
+    margin: 10px 10px 0 0;
+    float: left;
+    border: 1px solid #fff;
+    height: 158px;
+    width: 368px;
+    box-sizing: content-box;
+    padding: 10px;
+}
+.fresh-ul-img{
+    float: left;
+    position: relative;
+    /* border: 1px solid; */
+}
+.fresh-ul-img>img{
+    width: 158px;
+    height: 158px;
+}
+.fresh-ul-info{
+    padding: 5px 0 0 173px;
+}
+.fresh-ul-title{
+    font-size: 14px;
+    line-height: 24px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #000;
+}
+.fresh-ul-title>a{
+    color: #000;
+    text-decoration: none;
+}
+.fresh-ul-title>a:hover{
+    color: #000;
+    text-decoration: underline;
+}
+.fresh-ul-font{
+    line-height: 24px;
+    font-size: 12px;
+    color: #999;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 24px;
+}
+.fresh-ul-detailed{
+    height: 54px;
+    margin-top: 12px;
+    overflow: hidden;
+}
+.fresh-ul-money{
+    height: 40px;
+    line-height: 40px;
+}
+.fresh-ul-money>span{
+    float: left;
+    font-size: 20px;
+    color: #FF6F78;
+}
+.fresh-ul-money>a{
+    float: right;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(../images/fresh-ul-icon.png) no-repeat center center;
+}
+.lazy-fn>li:hover{
+    border: 1px solid #00AF90;
+}
+.fresh-bottom-icon{
+    font-family: 'Microsoft YaHei';
+    text-align: center;
+    padding: 20px 0 20px;
+    height: 38px;
+    overflow: hidden;
+    box-sizing: content-box;
+}
